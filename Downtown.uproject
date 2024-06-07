@@ -1,13 +1,16 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "{AF13F10B-48B1-B868-9905-F8900DC79756}",
+	"EngineAssociation": "{FC277CF1-4C2E-E5BB-8F05-38BD8B0BD010}",
 	"Category": "",
 	"Description": "",
 	"Modules": [
 		{
 			"Name": "Downtown",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +20,14 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "PCG",
+			"Enabled": true
+		},
+		{
+			"Name": "CommonUI",
+			"Enabled": true
 		}
 	]
 }
